@@ -20,6 +20,8 @@ Hi, I'm **Sathyajith (Velmet)** — a student developer from **India** working *
 
 **Open to:** remote opportunities and online collaboration — internships, junior / freelance work, open-source collabs.
 
+<img src="./assets/divider.svg" width="100%" alt="" />
+
 <img src="./assets/sec-stack.svg" width="380" alt="stack" />
 
 **Core strengths**
@@ -34,12 +36,16 @@ Hi, I'm **Sathyajith (Velmet)** — a student developer from **India** working *
 <p align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=godot,arduino,raspberrypi,git,vscode&amp;theme=dark" alt="Godot, Arduino, Raspberry Pi, Git, VS Code" /></a></p>
 <p align="center"><sub>Godot • Arduino • Raspberry Pi • Git • VS Code</sub></p>
 
+<img src="./assets/divider.svg" width="100%" alt="" />
+
 <img src="./assets/sec-activity.svg" width="380" alt="activity" />
 
 <p align="center"><img height="160" src="https://github-readme-stats.vercel.app/api?username=Velmet44&amp;show_icons=true&amp;hide_border=true&amp;bg_color=0A0A14&amp;title_color=A78BFA&amp;text_color=E6E8F2&amp;icon_color=22D3EE" alt="Velmet44 GitHub stats" /> <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Velmet44&amp;layout=compact&amp;hide_border=true&amp;bg_color=0A0A14&amp;title_color=A78BFA&amp;text_color=E6E8F2" alt="Velmet44 top languages" /></p>
 <p align="center"><img src="https://streak-stats.demolab.com?user=Velmet44&amp;hide_border=true&amp;background=0A0A14&amp;ring=A78BFA&amp;fire=22D3EE&amp;currStreakLabel=A78BFA&amp;sideLabels=E6E8F2&amp;currStreakNum=E6E8F2&amp;sideNums=E6E8F2&amp;dates=9AA3B8" alt="Velmet44 contribution streak" /></p>
 <p align="center"><img src="./assets/contrib.svg" alt="Velmet44 contribution calendar" /></p>
 <p align="center"><sub>Stats, languages, streak and contribution calendar update automatically from public GitHub activity.</sub></p>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 <img src="./assets/sec-builds.svg" width="380" alt="builds" />
 
@@ -57,20 +63,18 @@ Software is my main focus, but I also build physical things. Keeping this short 
 
 </details>
 
+<img src="./assets/divider.svg" width="100%" alt="" />
+
 <img src="./assets/sec-contact.svg" width="380" alt="contact" />
 
 <p align="center"><b>Actively open to remote opportunities and collaboration — email or Discord is the fastest way to reach me.</b></p>
 <p align="center"><a href="mailto:velmet44@gmail.com"><img src="https://img.shields.io/badge/Email-velmet44%40gmail.com-8B5CF6?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email velmet44@gmail.com" /></a> <a href="https://discord.com/users/1081881317286891530"><img src="https://img.shields.io/badge/Discord-%40velmet44-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Discord @velmet44" /></a></p>
 <p align="center"><sub>Discord: <b>@velmet44</b> — DMs open • <a href="https://discord.com/users/1081881317286891530">direct profile link</a></sub></p>
 
-|  |  |
-|---|---|
-| Email | velmet44@gmail.com |
-| Discord | @velmet44 (DMs open) |
-| Location | India — remote only, no onsite |
+<p align="center"><b>Email</b> · <a href="mailto:velmet44@gmail.com">velmet44@gmail.com</a></p>
+<p align="center"><b>Discord</b> · <a href="https://discord.com/users/1081881317286891530">@velmet44</a> — DMs open</p>
+<p align="center"><b>Location</b> · India — remote only, no onsite</p>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
-<div align="center">
-<sub>Thanks for stopping by — if you are building something interesting, let's talk.</sub>
-</div>
+<p align="center"><sub>Thanks for stopping by — if you are building something interesting, let's talk.</sub></p>
 <p align="center"><img src="https://komarev.com/ghpvc/?username=Velmet44&amp;style=flat-square&amp;color=8b5cf6" alt="profile views" /></p>

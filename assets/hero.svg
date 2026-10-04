@@ -1,164 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="heroTitle heroDesc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-labelledby="heroTitle heroDesc">
 <title id="heroTitle">Sathyajith (Velmet) — student developer</title>
-<desc id="heroDesc">Dark modern terminal-style hero with violet and cyan accents</desc>
+<desc id="heroDesc">Dark hero with name, tagline and terminal window</desc>
 <defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0%" stop-color="#0A0A14"/>
-<stop offset="55%" stop-color="#121226"/>
-<stop offset="100%" stop-color="#0B1526"/>
-</linearGradient>
-<linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0%" stop-color="#8B5CF6"/>
-<stop offset="50%" stop-color="#6366F1"/>
-<stop offset="100%" stop-color="#22D3EE"/>
-</linearGradient>
-<linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0%" stop-color="#FFFFFF"/>
-<stop offset="60%" stop-color="#DDD6FE"/>
-<stop offset="100%" stop-color="#67E8F6"/>
-</linearGradient>
-<linearGradient id="termHeader" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0%" stop-color="#1A1A2E"/>
-<stop offset="100%" stop-color="#151524"/>
-</linearGradient>
-<radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+<radialGradient id="wash" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.10"/>
 <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
 </radialGradient>
-<radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#22D3EE" stop-opacity="0.28"/>
-<stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
-</radialGradient>
-<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
-</pattern>
-<filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
-<feGaussianBlur stdDeviation="60"/>
-</filter>
-<filter id="soft2" x="-40%" y="-40%" width="180%" height="180%">
-<feGaussianBlur stdDeviation="24"/>
-</filter>
 </defs>
 <style>
 .sans { font-family: Inter, 'Segoe UI', system-ui, -apple-system, sans-serif; }
 .mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, Menlo, monospace; }
 .fade-line { opacity: 0; animation: rise 9s ease-in-out infinite; }
 .r1 { animation-delay: 0.4s; } .r2 { animation-delay: 1.4s; } .r3 { animation-delay: 2.5s; } .r4 { animation-delay: 3.6s; } .r5 { animation-delay: 4.6s; }
-@keyframes rise { 0% { opacity: 0; transform: translateY(10px); } 8% { opacity: 1; transform: translateY(0); } 82% { opacity: 1; } 92%, 100% { opacity: 0.92; } }
+@keyframes rise { 0% { opacity: 0; } 8% { opacity: 1; } 84% { opacity: 1; } 94%, 100% { opacity: 0.94; } }
 .blink { animation: blink 1.15s steps(1) infinite; }
 @keyframes blink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0; } }
-.pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.82); } }
-.drift1 { animation: drift1 11s ease-in-out infinite alternate; }
-.drift2 { animation: drift2 13s ease-in-out infinite alternate; }
-@keyframes drift1 { from { transform: translate(-30px, -10px); } to { transform: translate(40px, 25px); } }
-@keyframes drift2 { from { transform: translate(30px, 15px); } to { transform: translate(-35px, -20px); } }
-.flow { stroke-dasharray: 6 10; animation: dash 2.8s linear infinite; }
-@keyframes dash { to { stroke-dashoffset: -32; } }
-.scan { animation: scan 6s ease-in-out infinite; }
-@keyframes scan { 0%, 100% { transform: translateY(0); opacity: 0; } 12% { opacity: 0.7; } 50% { transform: translateY(290px); opacity: 0.55; } 62% { opacity: 0; } }
-.float-slow { animation: floaty 7s ease-in-out infinite; }
-.float-slower { animation: floaty 9s ease-in-out infinite reverse; }
-@keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-.shimmer { animation: shimmer 5.5s ease-in-out infinite; }
-@keyframes shimmer { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
 </style>
 <!-- base -->
-<rect x="8" y="8" width="1264" height="464" rx="28" fill="url(#bg)" stroke="url(#borderGrad)" stroke-opacity="0.55" stroke-width="1.5"/>
-<rect x="8" y="8" width="1264" height="464" rx="28" fill="url(#grid)" opacity="0.55"/>
-<!-- glows -->
-<g opacity="0.9">
-<g class="drift1"><ellipse cx="980" cy="130" rx="260" ry="170" fill="url(#violetGlow)"/></g>
-<g class="drift2"><ellipse cx="300" cy="360" rx="280" ry="160" fill="url(#cyanGlow)" opacity="0.8"/></g>
-</g>
-<!-- faint code symbols -->
-<g fill="none" stroke="#A78BFA" stroke-opacity="0.18" stroke-width="1.5" class="float-slow">
-<path d="M 88 96 l -18 14 18 14"/>
-<path d="M 128 96 l 18 14 -18 14"/>
-<path d="M 114 88 l -14 32"/>
-</g>
-<g fill="#22D3EE" fill-opacity="0.16" font-size="22" class="mono float-slower">
-<text x="1170" y="90">{ }</text>
-<text x="90" y="410">&lt;/&gt;</text>
-</g>
-<g fill="#A78BFA" fill-opacity="0.16" font-size="20" class="mono float-slow">
-<text x="1120" y="410">+ • ×</text>
-</g>
+<rect x="8" y="8" width="1264" height="444" rx="24" fill="#0B0D12" stroke="#232838" stroke-width="1.2"/>
+<ellipse cx="1050" cy="90" rx="300" ry="150" fill="url(#wash)"/>
 <!-- LEFT -->
 <g>
-<!-- status pill -->
-<rect x="72" y="64" width="338" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.06" stroke="#A78BFA" stroke-opacity="0.35"/>
-<circle cx="96" cy="82" r="6" fill="#34D399" class="pulse"/>
-<text x="112" y="88" font-size="14.5" letter-spacing="2.2" fill="#C4B5FD" class="mono">OPEN TO REMOTE WORK</text>
-<!-- name -->
-<text x="70" y="165" font-size="68" font-weight="800" fill="url(#nameGrad)" class="sans" letter-spacing="-1">Sathyajith</text>
-<text x="70" y="212" font-size="34" font-weight="600" fill="#A78BFA" class="sans" letter-spacing="0.5">(Velmet)</text>
-<text x="72" y="252" font-size="19.5" fill="#E6E8F2" class="sans">Building useful software — from the web to the workbench.</text>
-<text x="72" y="280" font-size="15.5" fill="#9AA3B8" class="mono">student • india • remote only</text>
-<!-- tech pills -->
-<g font-size="13.5" class="mono">
-<rect x="72" y="306" width="150" height="32" rx="16" fill="#8B5CF6" fill-opacity="0.14" stroke="#8B5CF6" stroke-opacity="0.5"/>
-<text x="97" y="327" fill="#DDD6FE">open-source</text>
-<rect x="232" y="306" width="98" height="32" rx="16" fill="#22D3EE" fill-opacity="0.10" stroke="#22D3EE" stroke-opacity="0.45"/>
-<text x="252" y="327" fill="#A5F3FC">web</text>
-<rect x="340" y="306" width="132" height="32" rx="16" fill="#8B5CF6" fill-opacity="0.14" stroke="#8B5CF6" stroke-opacity="0.5"/>
-<text x="360" y="327" fill="#DDD6FE">AI agents</text>
-<rect x="482" y="306" width="118" height="32" rx="16" fill="none" stroke="#3A3A52" stroke-width="1.2"/>
-<text x="500" y="327" fill="#9AA3B8">robotics</text>
-</g>
-<!-- bottom line -->
-<line x1="72" y1="372" x2="600" y2="372" stroke="#2A2A40" stroke-width="1.2"/>
-<text x="72" y="398" font-size="14" fill="#7C849C" class="mono">agents • llms • apps • websites • hardware • games</text>
-<line x1="72" y1="414" x2="420" y2="414" stroke="url(#borderGrad)" stroke-width="2.5" stroke-linecap="round" class="shimmer"/>
+<text x="72" y="86" font-size="13" letter-spacing="3" fill="#8B8DA3" class="mono">OPEN TO REMOTE WORK · INDIA</text>
+<text x="70" y="168" font-size="70" font-weight="800" fill="#F2F4F8" class="sans" letter-spacing="-1">Sathyajith</text>
+<text x="72" y="212" font-size="30" font-weight="600" fill="#A78BFA" class="sans">(Velmet)</text>
+<text x="72" y="252" font-size="19" fill="#B9C0D0" class="sans">Building useful software — from the web to the workbench.</text>
+<text x="72" y="282" font-size="15" fill="#8B93A7" class="mono">student · india · remote only</text>
+<text x="72" y="318" font-size="14" fill="#8B93A7" class="mono">open-source / web / ai-agents / robotics</text>
+<line x1="72" y1="352" x2="300" y2="352" stroke="#232838" stroke-width="1.2"/>
+<text x="72" y="378" font-size="13" fill="#5B6376" class="mono">apps · websites · llm tools · hardware · games</text>
 </g>
 <!-- TERMINAL -->
 <g>
-<rect x="680" y="56" width="528" height="368" rx="20" fill="#0D0D18" fill-opacity="0.92" stroke="#2B2B44" stroke-width="1.4"/>
-<rect x="680" y="56" width="528" height="368" rx="20" fill="none" stroke="url(#borderGrad)" stroke-opacity="0.28" stroke-width="1.2"/>
-<rect x="680" y="56" width="528" height="54" rx="20" fill="url(#termHeader)"/>
-<rect x="680" y="88" width="528" height="22" fill="url(#termHeader)"/>
-<circle cx="708" cy="83" r="7" fill="#FF5F57"/>
-<circle cx="730" cy="83" r="7" fill="#FEBC2E"/>
-<circle cx="752" cy="83" r="7" fill="#28C840"/>
-<text x="780" y="88" font-size="13.5" fill="#8B8DA3" class="mono">velmet@dev: ~</text>
-<text x="1150" y="88" font-size="13" fill="#565B73" class="mono">zsh</text>
-<!-- scanline -->
-<rect x="696" y="118" width="496" height="2.5" rx="1.2" fill="#22D3EE" opacity="0" class="scan"/>
-<!-- rows -->
-<g font-size="15.5" class="mono">
+<rect x="700" y="56" width="508" height="348" rx="16" fill="#10131B" stroke="#262C3A" stroke-width="1.2"/>
+<line x1="700" y1="106" x2="1208" y2="106" stroke="#1E2430" stroke-width="1"/>
+<circle cx="728" cy="81" r="6" fill="#FF5F57"/>
+<circle cx="748" cy="81" r="6" fill="#FEBC2E"/>
+<circle cx="768" cy="81" r="6" fill="#28C840"/>
+<text x="792" y="86" font-size="13" fill="#8B8DA3" class="mono">velmet@dev: ~</text>
+<text x="1160" y="86" font-size="12.5" fill="#565B73" class="mono">zsh</text>
+<g font-size="15" class="mono">
 <g class="fade-line r1">
-<text x="704" y="148" fill="#22D3EE">$</text>
-<text x="724" y="148" fill="#E8EAF2">whoami</text>
-<text x="704" y="172" fill="#7C849C">→ sathyajith (velmet) — student, india</text>
+<text x="724" y="144" fill="#7DD3FC">$</text>
+<text x="742" y="144" fill="#E8EAF2">whoami</text>
+<text x="724" y="168" fill="#8B93A7">sathyajith (velmet) — student, india</text>
 </g>
 <g class="fade-line r2">
-<text x="704" y="208" fill="#22D3EE">$</text>
-<text x="724" y="208" fill="#E8EAF2">focus --list</text>
-<text x="704" y="232" fill="#7C849C">→ apps • web • </text>
-<text x="836" y="232" fill="#A78BFA">llm-agents</text>
-<text x="936" y="232" fill="#7C849C"> • </text>
-<text x="954" y="232" fill="#67E8F6">robotics</text>
+<text x="724" y="204" fill="#7DD3FC">$</text>
+<text x="742" y="204" fill="#E8EAF2">focus --list</text>
+<text x="724" y="228" fill="#8B93A7">apps · web · </text>
+<text x="832" y="228" fill="#A78BFA">llm-agents</text>
+<text x="928" y="228" fill="#8B93A7"> · robotics</text>
 </g>
 <g class="fade-line r3">
-<text x="704" y="268" fill="#22D3EE">$</text>
-<text x="724" y="268" fill="#E8EAF2">stack --core</text>
-<text x="704" y="292" fill="#C4B5FD">→ py • ts • js • react • html/css</text>
+<text x="724" y="264" fill="#7DD3FC">$</text>
+<text x="742" y="264" fill="#E8EAF2">stack --core</text>
+<text x="724" y="288" fill="#C4B5FD">py · ts · js · react · html/css</text>
 </g>
 <g class="fade-line r4">
-<text x="704" y="328" fill="#22D3EE">$</text>
-<text x="724" y="328" fill="#E8EAF2">learning --now</text>
-<text x="704" y="352" fill="#7C849C">→ rust (intermediate) • c# • godot</text>
+<text x="724" y="324" fill="#7DD3FC">$</text>
+<text x="742" y="324" fill="#E8EAF2">learning --now</text>
+<text x="724" y="348" fill="#8B93A7">rust (intermediate) · c# · godot</text>
 </g>
 <g class="fade-line r5">
-<text x="704" y="388" fill="#34D399">✓</text>
-<text x="724" y="388" fill="#E8EAF2">open_to_remote</text>
-<text x="856" y="388" fill="#565B73">:</text>
-<text x="870" y="388" fill="#34D399">true</text>
-<rect x="916" y="376" width="10" height="18" fill="#A78BFA" class="blink"/>
+<text x="724" y="384" fill="#34D399">✓</text>
+<text x="742" y="384" fill="#E8EAF2">open_to_remote: </text>
+<text x="892" y="384" fill="#34D399">true</text>
+<rect x="936" y="372" width="9" height="17" fill="#A78BFA" class="blink"/>
 </g>
 </g>
-<!-- data flow line -->
-<path d="M 640 240 C 655 240 665 240 680 240" fill="none" stroke="url(#borderGrad)" stroke-width="2" class="flow" opacity="0.8"/>
-<circle cx="640" cy="240" r="3.5" fill="#8B5CF6"/>
 </g>
 </svg>
