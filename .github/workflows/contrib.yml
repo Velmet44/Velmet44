@@ -1,0 +1,43 @@
+name: Refresh contribution chart
+
+on:
+  schedule:
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Fetch and recolor chart for dark mode
+        run: python - <<'EOF'
+          import re, urllib.request
+          req = urllib.request.Request(
+              'https://ghchart.rshah.org/8B5CF6/Velmet44',
+              headers={'User-Agent': 'profile-contrib-refresh'},
+          )
+          with urllib.request.urlopen(req, timeout=60) as r:
+              svg = r.read().decode('utf-8')
+          # Empty cells -> GitHub dark empty; labels -> dark muted.
+          # Violet activity shades are left untouched.
+          svg = re.sub(r'#EEEEEE', '#161B22', svg, flags=re.IGNORECASE)
+          svg = re.sub(r'#767676', '#7D8590', svg, flags=re.IGNORECASE)
+          with open('assets/contrib.svg', 'w', encoding='utf-8') as f:
+              f.write(svg)
+          EOF
+      - name: Commit if changed
+        run: |
+          git diff --quiet -- assets/contrib.svg || {
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/contrib.svg
+            git commit -m "chore: refresh contribution chart"
+            git push
+          }
